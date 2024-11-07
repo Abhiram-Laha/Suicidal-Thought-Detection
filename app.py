@@ -44,7 +44,7 @@ if st.button("Classify", key="classify_button", help="Click to classify the twee
         st.write(f"**Confidence Level**: {prediction_prob * 100:.2f}%")
 
         st.write("### Word Cloud for the Input Tweet:")
-        wordcloud = WordCloud(width=800, height=400, max_words=200, background_color="white").generate(processed_input)
+        wordcloud = WordCloud(width=500, height=200, max_words=300, background_color="white").generate(processed_input)
 
         plt.figure(figsize=(10, 5))
         plt.imshow(wordcloud, interpolation="bilinear")
@@ -62,7 +62,7 @@ if st.button("Classify", key="classify_button", help="Click to classify the twee
         st.write(f"**Confidence Level**: {prediction_prob * 100:.2f}%")
 
         st.write("### Word Cloud for the Uploaded File:")
-        wordcloud = WordCloud(width=800, height=400, max_words=200, background_color="white").generate(processed_input)
+        wordcloud = WordCloud(width=500, height=200, max_words=300, background_color="white").generate(processed_input)
 
         plt.figure(figsize=(10, 5))
         plt.imshow(wordcloud, interpolation="bilinear")
